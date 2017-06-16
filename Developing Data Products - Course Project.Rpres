@@ -1,0 +1,48 @@
+Developing Data Products - Course Project
+========================================================
+author: Chen Fuwei
+date: 16 June 2017
+font-family: 'Calibri'
+autosize: true
+transition: fade
+
+Introduction
+========================================================
+
+This presentation was created as part of the course project for the Developing Data Products course in the Data Science Specialization developed by Johns Hopkins University and hosted on Coursera. It aims to ensure that the student is able to use <span style="color:blue">Slidify</span> or <span style="color:blue">Rstudio Presenter</span> to prepare a reproducible pitch presentation about a Shiny application created by the student.
+
+The Application
+========================================================
+
+A simple application called  <span style="color:blue">Sample Size Calculator</span> has been developed and deployed at: https://cfwei.shinyapps.io/devdatapdt-courseproj/
+
+This application allows the user to determine the size of the sample (e.g. for a survey) required in order to obtain results that represent a target population. This is done by adjusting the values of four parameters: size of target population, response distribution, confidence level, and margin of error. The resulting minimum recommended sample size will be derived and shown.
+
+The source code is available here: https://github.com/chenfwei/Developing-Data-Products-Course-Project/blob/master/app.R
+
+Formula
+========================================================
+
+The following is the formula for the recommended minimum sample size:
+
+s = [N*(z^2)*p*(1-p))]/[((N-1)*(e^2)+(z^2)*p*(1-p)]  
+
+where:  
+
+N = the size of target population  
+e = the margin of error or amount of error one can tolerate
+p = the expected distribution of the response  
+z = the z-value corresponding to the confidence level one seeks to achieve (1.645 for 90% confidence level, 1.960 for 95%, and 2.576 for 99%)  
+s = recommended minimum sample size
+
+Example
+========================================================
+
+```{r}
+    N <- 20000
+    e <- 0.05
+    p <- 0.5
+    z <- 1.96
+    s <- (N*(z^2)*p*(1-p))/((N-1)*(e^2)+(z^2)*p*(1-p)) 
+    ceiling(s)
+```
