@@ -9,7 +9,9 @@ transition: fade
 Introduction
 ========================================================
 
-This presentation was created as part of the course project for the Developing Data Products course in the Data Science Specialization developed by Johns Hopkins University and hosted on Coursera. It aims to ensure that the student is able to use <span style="color:blue">Slidify</span> or <span style="color:blue">Rstudio Presenter</span> to prepare a reproducible pitch presentation about a Shiny application created by the student.
+This presentation was created as part of the course project for the Developing Data Products course in the Data Science Specialization developed by Johns Hopkins University and hosted on Coursera. It aims to ensure that the student is able to use <span style="color:blue">Slidify</span> or <span style="color:blue">Rstudio Presenter</span> to prepare a reproducible pitch presentation about a Shiny application created by the student.  
+
+The source code of the presentation is available here: https://github.com/chenfwei/Developing-Data-Products-Course-Project/blob/master/Developing%20Data%20Products%20-%20Course%20Project.Rpres
 
 The Application
 ========================================================
@@ -18,7 +20,7 @@ A simple application called  <span style="color:blue">Sample Size Calculator</sp
 
 This application allows the user to determine the size of the sample (e.g. for a survey) required in order to obtain results that represent a target population. This is done by adjusting the values of four parameters: size of target population, response distribution, confidence level, and margin of error. The resulting minimum recommended sample size will be derived and shown.
 
-The source code is available here: https://github.com/chenfwei/Developing-Data-Products-Course-Project/blob/master/app.R
+The source code of the application is available here: https://github.com/chenfwei/Developing-Data-Products-Course-Project/blob/master/app.R
 
 Formula
 ========================================================
